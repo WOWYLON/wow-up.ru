@@ -2,17 +2,18 @@
 
 ## Структура
 - index.html — основной файл
-- /img — фоновые изображения категорий (заглушки)
-- og-image.jpg, poster.jpg, favicon.ico — заглушки
-- robots.txt, sitemap.xml — SEO-файлы
+- robots.txt, sitemap.xml — SEO‑файлы
 - .htaccess — настройки для Apache (кеш/сжатие/заголовки)
 - nginx.conf.sample — пример конфига Nginx
 - netlify.toml — для Netlify (заголовки/кеш)
+- manifest.webmanifest — описание PWA
+- icons/ — иконки PWA и favicon
+- img/ — фоновые изображения категорий
 
 ## Что заменить перед публикацией
-- В index.html замените `https://example.com` на ваш реальный домен в canonical/og/url.
-- Вставьте коды в meta: google-site-verification и yandex-verification.
-- Положите реальные изображения в `/img`, `og-image.jpg`, `poster.jpg`, `favicon.ico`.
+- В index.html указан домен `https://wow-up.ru` в canonical/og/url.
+- Добавлены коды в meta: google-site-verification и yandex-verification.
+- Перед публикацией добавьте реальные файлы `favicon.ico`, `og-image.jpg`, `cover.jpg` и иконки PWA в папку `icons/`, а также изображения категорий и обложки в `img/`.
 
 ## Деплой (общий)
-Загрузите все файлы в корень домена (Document Root) вашего хостинга. Убедитесь, что `index.html` доступен по https://ваш.домен/ .
+Скачайте архив или клонируйте репозиторий, затем загрузите все файлы (включая скрытый `.htaccess`) в корень домена вашего хостинга. Убедитесь, что `index.html` доступен по `https://ваш.домен/`.
