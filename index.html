@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WOWUP — Консалтинг и цифровая инфраструктура</title>
+  <meta name="description" content="WOWUP: консалтинг, автоматизация, международная экспансия. Упрощаем сложное — вы создаёте великое." />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_CODE" />
+  <meta name="yandex-verification" content="REPLACE_WITH_YANDEX_CODE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WOWUP — Консалтинг и цифровая инфраструктура" />
+  <meta property="og:description" content="Мы строим системы роста: консалтинг, лицензирование, автоматизация, маркетинг и ИИ." />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="https://example.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="alternate" href="https://example.com/ru" hreflang="ru" />
+  <link rel="alternate" href="https://example.com/en" hreflang="en" />
+  <link rel="canonical" href="https://example.com" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{--bg:#1C1C1C;--fg:#BFC6CC;--accent:#00D9A0;--muted:#96A2AD;--card:#202427;--panel:#121416;--stroke:#00D9A0;--container:1200px;--radius:18px;--speed:.35s;--shadow:0 10px 30px rgba(0,0,0,.35);--b:rgba(255,255,255,.08)}*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:var(--fg);text-decoration:none}img,video{max-width:100%;display:block}.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+    #preloader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:var(--bg);z-index:9999}.loader{display:flex;flex-direction:column;align-items:center;gap:16px}.logo{width:80px;height:80px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;position:relative;overflow:hidden}.logo::after{content:"";position:absolute;inset:-40%;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),transparent 60%);animation:spin 1.5s linear infinite;opacity:.6}.logo span{position:relative;z-index:1;font-weight:800;letter-spacing:.5px;color:var(--fg)}.bar{width:200px;height:6px;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden;box-shadow:var(--shadow)}.bar i{display:block;height:100%;width:40%;background:var(--accent);animation:slide 3s ease-in-out infinite;border-radius:inherit}@keyframes spin{to{transform:rotate(1turn)}}@keyframes slide{0%{transform:translateX(-100%)}50%{transform:translateX(30%)}100%{transform:translateX(120%)}}
+    header{position:static;z-index:90;background:transparent;border-bottom:1px solid var(--b)}.nav{display:flex;align-items:center;justify-content:space-between;height:72px}.brand{display:flex;align-items:center;gap:12px;font-weight:800}.brand .dot{width:12px;height:12px;border-radius:50%;background:var(--accent)}.menu{display:flex;align-items:center;gap:18px}.menu a{padding:10px 12px;border-radius:10px;transition:.2s}.menu a:hover{background:rgba(255,255,255,.06)}.lang-switch{display:flex;gap:8px;align-items:center;margin-left:10px}.lang-switch button{background:transparent;border:1px solid var(--b);color:var(--fg);padding:6px 10px;border-radius:10px;cursor:pointer}.lang-switch button.active{border-color:var(--accent);color:var(--accent)}
+    .dropdown{position:relative}.dropdown-panel{position:absolute;right:0;top:100%;width:min(980px,calc(100vw - 20px));background:var(--panel);border:1px solid var(--b);border-radius:16px;padding:12px;display:none;grid-template-columns:1fr 1fr 1fr;gap:10px;box-shadow:var(--shadow);z-index:100}.dropdown:hover .dropdown-panel,.dropdown.open .dropdown-panel{display:none}.dd-col{background:rgba(255,255,255,.02);border:1px solid var(--b);border-radius:12px;padding:10px;min-width:220px}.dd-col h4{margin:6px 0 10px 0;font-size:12px;text-transform:uppercase;color:var(--accent);letter-spacing:.08em}.dd-col a{display:block;padding:8px;border-radius:8px;color:var(--fg)}.dd-col a:hover{background:rgba(255,255,255,.06)}
+    .hero{position:relative;min-height:100vh;display:block;padding:40px 0}.hero .container{position:relative;max-width:none;padding:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:100vh}.headline{font-size:clamp(32px,4vw,56px);line-height:1.05;font-weight:900;letter-spacing:-.02em}.lede{margin-top:16px;color:var(--muted);line-height:1.7}.cta{margin-top:28px}.btn{display:inline-flex;align-items:center;gap:10px;border:1.6px solid var(--fg);background:transparent;color:var(--fg);padding:14px 22px;border-radius:9999px;white-space:nowrap;font-weight:800;cursor:pointer;transition:var(--speed)}.btn svg{width:18px;height:18px}
+    .btn-fill{background:linear-gradient(90deg,var(--accent),var(--accent)) no-repeat;background-size:0% 100%;transition:background-size var(--speed) linear,color var(--speed),border-color var(--speed)}
+    .btn-round{display:inline-grid;place-items:center;width:max(calc(12ch + 56px), 200px);aspect-ratio:1/1;border-radius:50%;padding:0 28px;justify-content:center}.btn-fill:hover{background-size:100% 100%;border-color:var(--accent);color:#000}
+    .hero .media{position:relative;width:100%;height:100vh}.hero .media video{width:100%;height:100%;object-fit:cover;border-radius:0;background:#0f1113}
+    .hero .container > div:first-child{padding:0 clamp(24px,4vw,64px) 0 clamp(24px,6vw,96px)}
+    .marquee{position:relative;overflow:hidden;border-block:0px solid var(--b);background:transparent}.marquee .track{display:flex;gap:40px;white-space:nowrap;will-change:transform;animation:mar 20s linear infinite;padding:28px 0}.marquee span{font-weight:900;font-size:88px;-webkit-text-stroke:1px var(--stroke);color:transparent;letter-spacing:.04em}@keyframes mar{to{transform:translateX(-50%)}}
+    .about{padding:100px 0}.slider{position:relative;background:var(--card);border:1px solid var(--b);border-radius:16px;overflow:hidden}.slides{display:flex;transition:transform .5s ease}.slide{min-width:100%;padding:42px 72px}.slide h3{font-size:38px;margin:0 0 8px;color:var(--accent)}.slide p{color:var(--fg);opacity:.9;line-height:1.7;margin:0}.slider .arrows{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 10px;pointer-events:none}.slider .arr{background:transparent;border:none;color:rgba(255,255,255,.7);border-radius:0;width:auto;height:auto;font-size:28px;line-height:1;display:grid;place-items:center;cursor:pointer;transition:.2s;pointer-events:auto;padding:4px 8px}.slider .arr:hover{color:var(--accent)}.slider .counter{position:absolute;left:50%;top:12px;transform:translateX(-50%);font-size:12px;color:var(--muted);background:rgba(255,255,255,.06);padding:6px 10px;border-radius:999px;border:1px solid var(--b)}.video-wrap{margin-top:18px;aspect-ratio:16/9;background:var(--card);border:1px dashed var(--b);display:grid;place-items:center;border-radius:16px}
+    .advantages{padding:100px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--b);padding:24px;border-radius:16px;transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card h4{margin:0 0 8px;color:var(--fg)}.card p{margin:0;color:var(--muted)}
+    .stats{padding:100px 0;border-block:1px solid var(--b);background:#171a1d}.stats .row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.stat{background:var(--card);border:1px solid var(--b);padding:26px;border-radius:16px;text-align:center}.num{font-size:40px;font-weight:900;color:var(--accent)}.label{color:var(--muted)}
+    .services{padding:100px 0}.list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.item{background:var(--card);border:1px solid var(--b);padding:16px;border-radius:12px;cursor:pointer;color:var(--fg)}.item:hover{border-color:var(--accent)}.item.active{border-color:var(--accent);box-shadow:0 0 0 2px rgba(0,217,160,.15) inset}.services #subcatWrap{margin-bottom:32px}.cat-cards{display:grid;grid-template-columns:repeat(3,minmax(260px,1fr));gap:18px;justify-content:center;align-items:stretch;margin-bottom:16px}.cat-card{position:relative;height:220px;border-radius:16px;overflow:hidden;background:#0f1113 center/cover no-repeat;border:1px solid var(--b);display:grid;place-items:center;text-align:center;transition:transform .25s,box-shadow .25s,border-color .25s}.cat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.6))}.cat-card h3{position:relative;z-index:1;margin:0;font-size:20px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.6)}.cat-card:hover{transform:translateY(-3px) scale(1.01);border-color:var(--accent);box-shadow:0 10px 30px rgba(0,217,160,.18)}.cat-card.active{outline:2px solid var(--accent);outline-offset:-2px;box-shadow:0 0 0 4px rgba(0,217,160,.12) inset}
+    footer{border-top:1px solid var(--b);padding:40px 0;background:#171a1d;margin-top:40px}.foot{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start}.foot .social{display:flex;gap:10px}.foot .social a{width:40px;height:40px;border:1px solid var(--b);border-radius:12px;display:grid;place-items:center;transition:transform .2s,border-color .2s,color .2s}.foot .social a:hover{transform:scale(1.08);border-color:var(--accent);color:var(--accent)}.legal{display:flex;justify-content:space-between;align-items:center;margin-top:20px;color:var(--muted);font-size:14px}.foot > div:last-child nav{justify-items:end;text-align:right}.foot > div:last-child{text-align:right}
+    .float-btn{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#000;border:none;border-radius:50%;width:56px;height:56px;display:grid;place-items:center;cursor:pointer;z-index:80;box-shadow:var(--shadow)}.float-btn::before{content:attr(data-icon);font-size:20px;line-height:1}
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.open{display:flex}.modal-card{width:min(720px,100%);background:var(--panel);border:1px solid var(--b);border-radius:18px;padding:22px;color:var(--fg)}.modal-card h3{margin:0 0 8px;color:var(--accent)}.modal-card p{color:var(--fg);line-height:1.7}.modal-actions{display:flex;justify-content:space-between;align-items:center;margin-top:16px}.messengers{display:flex;gap:10px}.messengers a{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid var(--b);color:var(--fg)}.messengers a:hover{border-color:var(--accent);color:var(--accent)}
+    .reveal{opacity:0;transform:translateY(16px)}.reveal.in{animation:fadeUp .7s var(--delay,0s) ease-out both}@keyframes fadeUp{to{opacity:1;transform:none}}
+    .cursor{position:fixed;left:0;top:0;pointer-events:none;z-index:9990}.cursor .dot{position:absolute;width:16px;height:16px;border-radius:50%;border:2px solid var(--accent);filter:drop-shadow(0 0 8px rgba(0,217,160,.35));transition:transform .2s ease}.cursor .ring{position:absolute;width:36px;height:36px;border-radius:50%;border:1px solid var(--accent);opacity:.55;box-shadow:0 0 24px rgba(0,217,160,.15) inset,0 0 40px rgba(0,217,160,.1);transition:transform .25s ease,opacity .25s ease}.cursor.hover .ring{transform:scale(1.5);opacity:.8}.cursor.active .dot{transform:scale(.85)}
+    header,section,footer{position:relative;z-index:2}.fx{position:fixed;inset:-10vmax;z-index:1;pointer-events:none;overflow:hidden}.fx::before{content:"";position:absolute;inset:-20%;background-image:radial-gradient(circle at center,rgba(0,217,160,.08) 2px,transparent 2.4px);background-size:42px 42px;opacity:.18;transform:translate3d(var(--mx,0),var(--my,0),0)}.orb{position:absolute;border-radius:50%;filter:blur(30px);opacity:.22;background:radial-gradient(closest-side,rgba(0,217,160,.35),rgba(0,217,160,0) 70%);mix-blend-mode:screen;will-change:transform}.orb.white{background:radial-gradient(closest-side,rgba(255,255,255,.18),rgba(255,255,255,0) 70%);opacity:.14;filter:blur(22px)}
+    .trail{position:fixed;inset:0;pointer-events:none;z-index:999;mix-blend-mode:normal}
+    .advantages h2,.stats h2,.services h2{text-align:center}
+    @media (max-width:980px){.hero .container{grid-template-columns:1fr;min-height:auto}.hero .media{position:static;width:100%;height:45vh;margin-top:20px}.marquee .track{animation-duration:28s}.cards{grid-template-columns:1fr}.stats .row{grid-template-columns:1fr}.list{grid-template-columns:1fr}.foot{grid-template-columns:1fr}.dropdown-panel{position:fixed;left:10px;right:10px;top:0;padding-top:64px}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.marquee .track{animation:none}.fx,.cursor,.trail{display:none!important}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"WOWUP","url":"https://example.com","logo":"https://example.com/logo.png","sameAs":["https://t.me/yourchannel","https://vk.com/yourpage"],"contactPoint":[{"@type":"ContactPoint","telephone":"+7-000-000-00-00","contactType":"customer service","availableLanguage":["Russian","English"]}]}
+  </script>
+</head>
+<body>
+  <div id="preloader" aria-hidden="true"><div class="loader"><div class="logo"><span>WOWUP</span></div><div class="bar"><i></i></div></div></div>
+  <div class="cursor" aria-hidden="true"><div class="ring"></div><div class="dot"></div></div>
+  <div class="fx" id="fx" aria-hidden="true"></div>
+  <canvas id="trail" class="trail" aria-hidden="true"></canvas>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="dot"></div><a href="#home" class="brand-name" data-scroll>WOWUP</a></div>
+      <nav class="menu">
+        <a href="#home" data-scroll data-i18n="menu.home">Главная</a>
+        <a href="#about" data-scroll data-i18n="menu.about">О нас</a>
+        <div class="dropdown">
+          <a href="#services" data-scroll data-i18n="menu.services">Услуги</a>
+          <div class="dropdown-panel" id="mega">
+            <div class="dd-col"><h4 data-i18n="mega.cats">Категории</h4><div id="mega-cats"></div></div>
+            <div class="dd-col"><h4 data-i18n="mega.subs">Подкатегории</h4><div id="mega-subs"></div></div>
+            <div class="dd-col"><h4 data-i18n="mega.svcs">Услуги</h4><div id="mega-svcs"></div></div>
+          </div>
+        </div>
+        <a href="#contacts" data-scroll data-i18n="menu.contacts">Контакты</a>
+        <div class="lang-switch" role="group" aria-label="Language switch"><button data-lang="ru" class="active">RU</button><button data-lang="en">EN</button></div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <div>
+        <h1 class="headline" data-i18n="hero.title">Создавать свободу для тех, кто меняет мир</h1>
+        <p class="lede" data-i18n="hero.desc">Бизнес должен расти, а не сражаться с рутиной. Предприниматель — не бухгалтер, не юрист и не технарь. Он создает, рискует, вдохновляет. Но часто он тонет в бумагах, застревает в технологиях и законах.<br><br>Мы здесь, чтобы убрать всё лишнее. Мы берём на себя сложности, чтобы у Вас появилось главное — пространство для идей, силы для роста и спокойствие за результат. Мы автоматизируем и оптимизируем процессы, освобождая бизнес от узких мест, которые мешают двигаться вперёд.</p>
+        <div class="cta"><a class="btn btn-fill btn-round" href="#about" data-scroll data-i18n="hero.more"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Подробнее</span></a></div>
+      </div>
+      <div class="media"><video src="" autoplay muted loop playsinline poster="/poster.jpg"></video></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track"><span>ПЕРЕВОДИМ БИЗНЕС И ЖИЗНЬ В WOW РЕЖИМ.</span><span>ПЕРЕВОДИМ БИЗНЕС И ЖИЗНЬ В WOW РЕЖИМ.</span><span>ПЕРЕВОДИМ БИЗНЕС И ЖИЗНЬ В WOW РЕЖИМ.</span><span>ПЕРЕВОДИМ БИЗНЕС И ЖИЗНЬ В WOW РЕЖИМ.</span></div></div>
+
+  <section id="about" class="about container">
+    <div class="slider reveal" id="aboutSlider">
+      <div class="slides">
+        <div class="slide"><h3 data-i18n="about.s1.title">Строим бизнес без границ</h3><p data-i18n="about.s1.text">Мы хотим, чтобы предприниматели фокусировались на росте и результате, а не застревали в бумагах, законах и «так нельзя». Наша миссия — упростить запуск, развитие и международную экспансию бизнеса, сняв с Вас бремя бюрократии, неопределённости и локальных ограничений. Мы стремимся создавать прозрачную, устойчивую среду, где бизнес развивается уверенно и свободно.</p></div>
+        <div class="slide"><h3 data-i18n="about.s2.title">Автоматизировать. Упростить. Увеличить.</h3><p data-i18n="about.s2.text">Мы не делаем «сайтики» и «рекламу». Мы верим, что технологии должны быть не игрушкой, а рычагом настоящего роста. Наша цель — строить цифровую инфраструктуру, которая работает без сбоев, усиливает команду и превращает каждый клик в действие. Мы стремимся к миру, где предприниматели больше не «гаснут» на рекламе, подрядчиках и диджитале — потому что у них есть команда, которая всё выстраивает грамотно и мощно.</p></div>
+        <div class="slide"><h3 data-i18n="about.s3.title">Делаем сложные решения простыми</h3><p data-i18n="about.s3.text">Мы хотим, чтобы умные, амбициозные люди могли свободно перемещаться, защищать своё имя и капитал — не запутываясь в законах, анкетах и иностранных системах.</p></div>
+      </div>
+      <div class="counter" id="counter">1/3</div>
+      <div class="arrows"><button class="arr" id="prev">‹</button><button class="arr" id="next">›</button></div>
+    </div>
+    <div class="video-wrap reveal"><p data-i18n="about.video">Здесь будет видео-презентация (вставьте URL).</p></div>
+  </section>
+
+  <section class="advantages"><div class="container"><h2 class="reveal" data-i18n="adv.title">Наши преимущества</h2><div class="cards">
+<div class="card reveal"><h4 data-i18n="adv.a1.t">Экспертиза 360°</h4><p data-i18n="adv.a1.d">От юридических структур до ИИ-автоматизации: одна команда, конечный результат.</p></div><div class="card reveal"><h4 data-i18n="adv.a2.t">Скорость и прозрачность</h4><p data-i18n="adv.a2.d">Работаем по SLA, показываем прогресс и цифры, а не «магические» отчеты.</p></div><div class="card reveal"><h4 data-i18n="adv.a3.t">Дизайн и влияние</h4><p data-i18n="adv.a3.d">Минималистичное, но эффектное. Всё подчинено конверсии и росту.</p></div></div></div></section>
+
+  <section class="stats" aria-label="О нас в цифрах"><div class="container"><h2 class="reveal" data-i18n="stats.title">О нас в цифрах</h2><div class="row"><div class="stat reveal"><div class="num" data-count="5000">0</div><div class="label" data-i18n="stats.s1">более 5000 сделок</div></div><div class="stat reveal"><div class="num" data-count="12">0</div><div class="label" data-i18n="stats.s2">12 лет опыта</div></div><div class="stat reveal"><div class="num" data-count="21">0</div><div class="label" data-i18n="stats.s3">присутствие в 21 стране мира</div></div></div></div></section>
+
+  <section id="services" class="services container"><h2 class="reveal" data-i18n="services.title">Услуги</h2><p class="reveal" data-i18n="services.hint">Сначала выберите категорию, затем подкатегорию, затем услугу.</p><div id="catWrap" class="cat-cards"></div><div id="subcatWrap" class="list"></div><div id="serviceList" class="list"></div></section>
+
+  <footer id="contacts"><div class="container foot"><div><h4 data-i18n="foot.contacts">Контакты</h4><div class="social"><a href="https://wa.me/0000000000" aria-label="WhatsApp" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 3.999A9.96 9.96 0 0 0 12.06 2C6.51 2 2 6.51 2 12.06c0 1.78.46 3.53 1.33 5.07L2 22l4.98-1.3a9.96 9.96 0 0 0 5.08 1.33h.01C17.61 22 22 17.49 22 11.94 22 8.9 20.82 6.04 18.78 4" stroke="currentColor" stroke-width="1.5"/></svg></a><a href="https://t.me/yourusername" aria-label="Telegram" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 3.5 2.8 10.6c-.8.3-.8 1.5.1 1.8l4.7 1.5 1.8 5.6c.3.9 1.5 1 1.9.2l2.7-4.3 4.6 3.4c.8.6 2 .1 2.2-.9l3-13.2c.2-1-0.8-1.8-1.8-1.4Z" stroke="currentColor" stroke-width="1.3"/></svg></a><a href="https://vk.com/yourpage" aria-label="VK" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7c.2 5.7 3.1 9.3 8.4 10h.4v-3.5c2 .2 3.5 1.6 4.1 3.5H20c-.8-2.6-2.6-4.4-4.1-5 1.5-.8 3.1-2.7 3.5-5h-3.1c-.6 2.2-2.2 4-3.9 4.2V7H9.2v7.4C7.4 14 6.2 11.8 6 7H3Z" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div style="text-align:center"><div class="brand" style="justify-content:center"><div class="dot"></div><span>WOWUP</span></div><p style="color:var(--muted)" data-i18n="foot.slogan">Мы упрощаем сложное, чтобы вы могли создавать великое.</p><p style="font-size:12px"><a href="/privacy" style="color:var(--muted)" data-i18n="foot.privacy">Политика конфиденциальности</a></p></div><div><h4 data-i18n="foot.menu">Меню</h4><nav style="display:grid;gap:8px;text-align:right"><a href="#home" data-scroll data-i18n="menu.home">Главная</a><a href="#about" data-scroll data-i18n="menu.about">О нас</a><a href="#services" data-scroll data-i18n="menu.services">Услуги</a><a href="#contacts" data-scroll data-i18n="menu.contacts">Контакты</a></nav></div></div><div class="container legal"><span>WOWUP © 2025 Все права защищены.</span><span><a href="/sitemap.xml" style="color:var(--muted)">Sitemap</a></span></div></footer>
+
+  <button class="float-btn" data-icon="✉️" onclick="openMessenger()" aria-label="Связаться"></button>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card" role="document"><h3 id="modalTitle">Service</h3><p id="modalText">Text</p><div class="modal-actions"><div class="messengers"><a href="https://wa.me/0000000000" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a><a href="https://t.me/yourusername" target="_blank" rel="noopener" aria-label="Telegram">🚀</a></div><button class="btn" id="closeModal" type="button">Закрыть</button></div></div></div>
+
+  <script>
+    const ACCENT=getComputedStyle(document.documentElement).getPropertyValue('--accent')||'#00D9A0';
+    const i18n={ru:{menu:{home:'Главная',about:'О нас',services:'Услуги',contacts:'Контакты'},hero:{title:'Создавать свободу для тех, кто меняет мир',more:'Подробнее',desc:`Бизнес должен расти, а не сражаться с рутиной. Предприниматель — не бухгалтер, не юрист и не технарь. Он создает, рискует, вдохновляет. Но часто он тонет в бумагах, застревает в технологиях и законах.\n\nМы здесь, чтобы убрать всё лишнее. Мы берём на себя сложности, чтобы у Вас появилось главное — пространство для идей, силы для роста и спокойствие за результат. Мы автоматизируем и оптимизируем процессы, освобождая бизнес от узких мест, которые мешают двигаться вперёд.`},about:{s1:{title:'Строим бизнес без границ',text:'Мы хотим, чтобы предприниматели фокусировались на росте и результате, а не застревали в бумагах, законах и «так нельзя». Наша миссия — упростить запуск, развитие и международную экспансию бизнеса, сняв с Вас бремя бюрократии, неопределённости и локальных ограничений. Мы стремимся создавать прозрачную, устойчивую среду, где бизнес развивается уверенно и свободно.'},s2:{title:'Автоматизировать. Упростить. Увеличить.',text:'Мы не делаем «сайтики» и «рекламу». Мы верим, что технологии должны быть не игрушкой, а рычагом настоящего роста. Наша цель — строить цифровую инфраструктуру, которая работает без сбоев, усиливает команду и превращает каждый клик в действие. Мы стремимся к миру, где предприниматели больше не «гаснут» на рекламе, подрядчиках и диджитале — потому что у них есть команда, которая всё выстраивает грамотно и мощно.'},s3:{title:'Делаем сложные решения простыми',text:'Мы хотим, чтобы умные, амбициозные люди могли свободно перемещаться, защищать своё имя и капитал — не запутываясь в законах, анкетах и иностранных системах.'},video:'Здесь будет видео-презентация (вставьте URL).'},adv:{title:'Наши преимущества',a1:{t:'Экспертиза 360°',d:'От юридических структур до ИИ-автоматизации: одна команда, конечный результат.'},a2:{t:'Скорость и прозрачность',d:'Работаем по SLA, показываем прогресс и цифры, а не «магические» отчеты.'},a3:{t:'Дизайн и влияние',d:'Минималистичное, но эффектное. Всё подчинено конверсии и росту.'}},stats:{title:'О нас в цифрах',s1:'более 5000 сделок',s2:'12 лет опыта',s3:'присутствие в 21 стране мира'},services:{title:'Услуги',hint:'Сначала выберите категорию, затем подкатегорию, затем услугу.'},mega:{cats:'Категории',subs:'Подкатегории',svcs:'Услуги'},foot:{contacts:'Контакты',slogan:'Мы упрощаем сложное, чтобы вы могли создавать великое.',privacy:'Политика конфиденциальности',menu:'Меню'},float:{cta:'Связаться'},modal:{cta:'Бесплатная консультация',close:'Закрыть'}},en:{menu:{home:'Home',about:'About',services:'Services',contacts:'Contacts'},hero:{title:'Create freedom for those who change the world',more:'Learn more',desc:`Business should grow, not fight routine. Entrepreneurs aren’t accountants, lawyers or techies—they create, take risks and inspire. But they often drown in paperwork, tech and regulations.\n\nWe’re here to remove the noise. We take on the complexity so you gain what matters: space for ideas, power for growth and peace of mind. We automate and optimize processes to remove bottlenecks that slow you down.`},about:{s1:{title:'Building business without borders',text:'We want entrepreneurs to focus on growth and outcomes, not get stuck in paperwork, laws and “you can’t”. Our mission is to simplify launch, scaling and international expansion by removing bureaucracy, uncertainty and local limits.'},s2:{title:'Automate. Simplify. Amplify.',text:'We don’t make “little websites” and “ads”. Tech is a lever for real growth. We build digital infrastructure that runs reliably, empowers teams and turns every click into action.'},s3:{title:'Making complex solutions simple',text:'We help ambitious people move freely and protect their name and capital—without getting lost in forms and foreign systems.'},video:'A video presentation will be embedded here.'},adv:{title:'Our Advantages',a1:{t:'360° Expertise',d:'From legal structures to AI automation—one team, accountable outcomes.'},a2:{t:'Speed & Clarity',d:'SLA-driven, transparent progress and numbers instead of hand-waving.'},a3:{t:'Design that Converts',d:'Minimal yet striking—everything serves growth and conversion.'}},stats:{title:'Numbers',s1:'5000+ deals',s2:'12 years of experience',s3:'presence in 21 countries'},services:{title:'Services',hint:'Pick a category, then a subcategory, then a service.'},mega:{cats:'Categories',subs:'Subcategories',svcs:'Services'},foot:{contacts:'Contacts',slogan:'We simplify the complex so you can build the remarkable.',privacy:'Privacy Policy',menu:'Menu'},float:{cta:'Contact us'},modal:{cta:'Free consultation',close:'Close'}}};
+
+    const SERVICES={'Консалтинговые услуги':{'Корпоративные решения':['Регистрация компаний в РФ и за рубежом','Создание холдинговой структуры','Регистрация фондов и трастов','Инкорпорация в оффшорных и оншорных зонах'],'Лицензирование':['Оформление финансовых лицензий (вкл. крипто и инвестиционные)','Получение VARA, DFSA, FCA, CySEC и др.','Консультации по лицензиям и регуляторным требованиям'],'Юридическое сопровождение':['Составление договоров и соглашений','Сопровождение сделок и инвестиционных контрактов','Международный арбитраж и урегулирование споров','Ликвидация компаний','Регистрация интеллектуальной собственности'],'Финансы и налоги':['Налоговое планирование и оптимизация','Аудит и бухгалтерское сопровождение','Подключение платёжных систем и мерчантов','Открытие корпоративных банковских счетов'],'Бизнес-архитектура':['Построение отдела продаж','Создание бизнес-проекта с нуля','Масштабирование действующего бизнеса','Стратегическая сессия и план развития'],'Проектное управление':['Внешний project-менеджмент','Запуск новых направлений и продуктов','Организация команд и адаптационных систем']},'Услуги digital-агентства':{'Разработка и дизайн':['Создание сайтов и лендингов','Дизайн фирменного стиля и айдентики','UI/UX-дизайн для веба и мобильных платформ'],'Digital-маркетинг':['SEO-продвижение','Контекстная реклама (PPC)','Таргетированная реклама','SMM и контент-маркетинг','Email-маркетинг и автоворонки'],'Автоматизация':['Внедрение и настройка CRM','Сквозная аналитика и отчёты','Автоматизация маркетинга и клиентских сценариев'],'ИИ и инновации':['Интеграция ИИ в продажи и клиентский сервис','Разработка чат-ботов и голосовых ассистентов','Генерация контента на базе нейросетей'],'DevOps и поддержка':['Настройка CI/CD и серверной инфраструктуры','Развёртывание облачных решений (AWS, GCP, Azure)','Техническая поддержка сайтов и систем']},'Услуги для физических лиц':{'Миграционные решения':['Оформление ВНЖ и гражданства через инвестиции','Переезд и сопровождение в другой стране','Оформление виз и международных разрешений'],'Финансовые решения':['Открытие личных счетов за рубежом','Создание личных фондов и трастов','Консультации по налоговому резидентству'],'Защита и статус':['Регистрация яхт и воздушных судов','Регистрация интеллектуальной собственности','Юридическая защита частных активов'],'Личный бренд':['Создание персонального сайта и имиджа','Ведение соцсетей и медийное продвижение','PR-сопровождение и работа со СМИ']}};
+
+    const MAP_EN={'Консалтинговые услуги':'Consulting','Корпоративные решения':'Corporate Solutions','Регистрация компаний в РФ и за рубежом':'Company incorporation (RU & abroad)','Создание холдинговой структуры':'Holding structure setup','Регистрация фондов и трастов':'Funds & trusts registration','Инкорпорация в оффшорных и оншорных зонах':'Onshore & offshore incorporation','Лицензирование':'Licensing','Оформление финансовых лицензий (вкл. крипто и инвестиционные)':'Financial licenses (incl. crypto & investment)','Получение VARA, DFSA, FCA, CySEC и др.':'VARA, DFSA, FCA, CySEC, etc.','Консультации по лицензиям и регуляторным требованиям':'Regulatory & licensing advisory','Юридическое сопровождение':'Legal support','Составление договоров и соглашений':'Contracts & agreements','Сопровождение сделок и инвестиционных контрактов':'Transactions & investment deals','Международный арбитраж и урегулирование споров':'International arbitration & disputes','Ликвидация компаний':'Company liquidation','Регистрация интеллектуальной собственности':'Intellectual property registration','Финансы и налоги':'Finance & Tax','Налоговое планирование и оптимизация':'Tax planning & optimization','Аудит и бухгалтерское сопровождение':'Audit & accounting','Подключение платёжных систем и мерчантов':'PSP & merchant onboarding','Открытие корпоративных банковских счетов':'Corporate bank accounts','Бизнес-архитектура':'Business architecture','Построение отдела продаж':'Sales org build-out','Создание бизнес-проекта с нуля':'Greenfield business build','Масштабирование действующего бизнеса':'Business scaling','Стратегическая сессия и план развития':'Strategy workshop & roadmap','Проектное управление':'Project management','Внешний project-менеджмент':'External project management','Запуск новых направлений и продуктов':'New lines & product launches','Организация команд и адаптационных систем':'Team & onboarding systems','Услуги digital-агентства':'Digital Agency','Разработка и дизайн':'Development & Design','Создание сайтов и лендингов':'Websites & landing pages','Дизайн фирменного стиля и айдентики':'Brand identity','UI/UX-дизайн для веба и мобильных платформ':'UI/UX for web & mobile','Digital-маркетинг':'Digital Marketing','SEO-продвижение':'SEO','Контекстная реклама (PPC)':'PPC Advertising','Таргетированная реклама':'Target ads','SMM и контент-маркетинг':'SMM & Content','Email-маркетинг и автоворонки':'Email & automation','Автоматизация':'Automation','Внедрение и настройка CRM':'CRM implementation','Сквозная аналитика и отчёты':'Attribution & BI','Автоматизация маркетинга и клиентских сценариев':'Marketing & CX automation','ИИ и инновации':'AI & Innovation','Интеграция ИИ в продажи и клиентский сервис':'AI for sales & CX','Разработка чат-ботов и голосовых ассистентов':'Chatbots & voice assistants','Генерация контента на базе нейросетей':'AI content generation','DevOps и поддержка':'DevOps & Support','Настройка CI/CD и серверной инфраструктуры':'CI/CD & infra','Развёртывание облачных решений (AWS, GCP, Azure)':'Cloud deployments (AWS/GCP/Azure)','Техническая поддержка сайтов и систем':'Tech support','Услуги для физических лиц':'Private Clients','Миграционные решения':'Migration solutions','Финансовые решения':'Financial solutions','Открытие личных счетов за рубежом':'Personal bank accounts','Создание личных фондов и трастов':'Personal funds & trusts','Консультации по налоговому резидентству':'Tax residency advisory','Защита и статус':'Protection & status','Регистрация яхт и воздушных судов':'Yacht & aircraft registration','Личный бренд':'Personal brand','Создание персонального сайта и имиджа':'Personal website & image','Ведение соцсетей и медийное продвижение':'Social & media promotion','PR-сопровождение и работа со СМИ':'PR & media relations'};
+
+    const CATEGORY_IMAGES={'Консалтинговые услуги':'/img/cat-consult.jpg','Услуги digital-агентства':'/img/cat-digital.jpg','Услуги для физических лиц':'/img/cat-private.jpg'};
+
+    const SERVICE_DESC={ru:{
+      'Регистрация компаний в РФ и за рубежом':'Оформляем юрлица под цели и юрисдикции, под ключ.',
+      'Создание холдинговой структуры':'Проектируем холдинг, контроль и налоговую логику.',
+      'Регистрация фондов и трастов':'Учреждаем фонды и трасты для защиты активов.',
+      'Инкорпорация в оффшорных и оншорных зонах':'Подбираем юрисдикцию, регистрируем и сопровождаем.',
+      'Оформление финансовых лицензий (вкл. крипто и инвестиционные)':'Готовим пакет, общаемся с регулятором, ведём до выдачи.',
+      'Получение VARA, DFSA, FCA, CySEC и др.':'Настраиваем процессы и подаём до получения лицензии.',
+      'Консультации по лицензиям и регуляторным требованиям':'Разбираем требования и планируем соответствие.',
+      'Составление договоров и соглашений':'Разрабатываем договоры, политики и регламенты.',
+      'Сопровождение сделок и инвестиционных контрактов':'Полный цикл: проверка, структура, подписание.',
+      'Международный арбитраж и урегулирование споров':'Готовим позицию и представляем интересы.',
+      'Ликвидация компаний':'Проводим добровольную ликвидацию и закрытие.',
+      'Регистрация интеллектуальной собственности':'Регистрируем ТМ, патенты и авторские права.',
+      'Налоговое планирование и оптимизация':'Структурируем налоги с учётом КИК и стран.',
+      'Аудит и бухгалтерское сопровождение':'Учёт, отчётность и поддержка аудита.',
+      'Подключение платёжных систем и мерчантов':'Подключаем PSP/мерчантов и антифрод.',
+      'Открытие корпоративных банковских счетов':'Готовим пакет и сопровождаем KYC.',
+      'Построение отдела продаж':'Процессы, CRM, KPI и обучение.',
+      'Создание бизнес-проекта с нуля':'От гипотез до MVP и операционной модели.',
+      'Масштабирование действующего бизнеса':'Диагностика узких мест и рост каналов.',
+      'Стратегическая сессия и план развития':'Сессия, цели и дорожная карта 90 дней.',
+      'Внешний project-менеджмент':'Управляем проектом, спринты и отчётность.',
+      'Запуск новых направлений и продуктов':'GTM, команда и первые продажи.',
+      'Организация команд и адаптационных систем':'Онбординг, роли и регламенты.',
+      'Создание сайтов и лендингов':'Дизайн, верстка, CMS, SEO и аналитика.',
+      'Дизайн фирменного стиля и айдентики':'Лого, гайдлайн и бренд‑система.',
+      'UI/UX-дизайн для веба и мобильных платформ':'Исследование, прототипы и дизайн‑система.',
+      'SEO-продвижение':'Техническое SEO, контент и ссылки.',
+      'Контекстная реклама (PPC)':'Настройка и оптимизация кампаний.',
+      'Таргетированная реклама':'Сегменты, креативы и оптимизация CPA.',
+      'SMM и контент-маркетинг':'Контент‑стратегия и рост вовлечённости.',
+      'Email-маркетинг и автоворонки':'Сегментация, цепочки и A/B‑тесты.',
+      'Внедрение и настройка CRM':'Воронки, интеграции и обучение.',
+      'Сквозная аналитика и отчёты':'Единая модель данных и дашборды.',
+      'Автоматизация маркетинга и клиентских сценариев':'Триггеры, RFM и омниканал.',
+      'Интеграция ИИ в продажи и клиентский сервис':'Ассистенты, подсказки и автоматизация.',
+      'Разработка чат-ботов и голосовых ассистентов':'Боты/IVR, интеграции и аналитика.',
+      'Генерация контента на базе нейросетей':'Контент‑пайплайн и контроль качества.',
+      'Настройка CI/CD и серверной инфраструктуры':'Репозитории, пайплайны и мониторинг.',
+      'Развёртывание облачных решений (AWS, GCP, Azure)':'Архитектура, безопасность и стоимость.',
+      'Техническая поддержка сайтов и систем':'SLA‑поддержка, багфикс и улучшения.',
+      'Оформление ВНЖ и гражданства через инвестиции':'Подбор программ и сопровождение заявки.',
+      'Переезд и сопровождение в другой стране':'Переезд, жильё, счета и связь.',
+      'Оформление виз и международных разрешений':'Подготовка, запись и документы.',
+      'Открытие личных счетов за рубежом':'Банки/финтех, KYC и сопровождение.',
+      'Создание личных фондов и трастов':'Защита активов и наследование.',
+      'Консультации по налоговому резидентству':'Определяем статус и последствия.',
+      'Регистрация яхт и воздушных судов':'Реестр, флаги и страховки.',
+      'Юридическая защита частных активов':'Структуры и договорные меры.',
+      'Создание персонального сайта и имиджа':'Позиционирование, сайт и контент.',
+      'Ведение соцсетей и медийное продвижение':'Контент‑план и рост аудитории.',
+      'PR-сопровождение и работа со СМИ':'Публикации и медиастратегия.'
+    },en:{
+      'Регистрация компаний в РФ и за рубежом':'End‑to‑end company setup in chosen jurisdictions.',
+      'Создание холдинговой структуры':'Holding design, control and tax logic.',
+      'Регистрация фондов и трастов':'Foundations and trusts for asset protection.',
+      'Инкорпорация в оффшорных и оншорных зонах':'Jurisdiction choice, incorporation and care.',
+      'Оформление финансовых лицензий (вкл. крипто и инвестиционные)':'Regulatory pack, liaison and issuance.',
+      'Получение VARA, DFSA, FCA, CySEC и др.':'Process setup and filings to obtain license.',
+      'Консультации по лицензиям и регуляторным требованиям':'Requirements review and compliance roadmap.',
+      'Составление договоров и соглашений':'Contracts, policies and internal rules.',
+      'Сопровождение сделок и инвестиционных контрактов':'Full deal cycle from DD to signing.',
+      'Международный арбитраж и урегулирование споров':'Case strategy and representation.',
+      'Ликвидация компаний':'Voluntary liquidation and closure.',
+      'Регистрация интеллектуальной собственности':'TM, patents and copyrights filing.',
+      'Налоговое планирование и оптимизация':'Cross‑border tax structuring incl. CFC.',
+      'Аудит и бухгалтерское сопровождение':'Accounting, reporting and audit help.',
+      'Подключение платёжных систем и мерчантов':'PSP/merchant onboarding and antifraud.',
+      'Открытие корпоративных банковских счетов':'KYC package and account opening.',
+      'Построение отдела продаж':'Processes, CRM, KPIs and training.',
+      'Создание бизнес-проекта с нуля':'From hypotheses to MVP and ops model.',
+      'Масштабирование действующего бизнеса':'Bottleneck removal and channel growth.',
+      'Стратегическая сессия и план развития':'Goals and a 90‑day roadmap.',
+      'Внешний project-менеджмент':'Project leadership, sprints, reporting.',
+      'Запуск новых направлений и продуктов':'Research, GTM, team and first sales.',
+      'Организация команд и адаптационных систем':'Onboarding, roles and playbooks.',
+      'Создание сайтов и лендингов':'Design, dev, CMS, SEO base and analytics.',
+      'Дизайн фирменного стиля и айдентики':'Logo, guidelines and brand system.',
+      'UI/UX-дизайн для веба и мобильных платформ':'Research, prototypes and design systems.',
+      'SEO-продвижение':'Tech SEO, content and links.',
+      'Контекстная реклама (PPC)':'Campaign setup and optimization.',
+      'Таргетированная реклама':'Audiences, creatives and CPA tuning.',
+      'SMM и контент-маркетинг':'Content strategy and engagement growth.',
+      'Email-маркетинг и автоворонки':'Segmentation, flows and A/B tests.',
+      'Внедрение и настройка CRM':'Pipelines, integrations and training.',
+      'Сквозная аналитика и отчёты':'Unified data model and dashboards.',
+      'Автоматизация маркетинга и клиентских сценариев':'Triggers, RFM and omnichannel.',
+      'Интеграция ИИ в продажи и клиентский сервис':'Assistants, hints and automation.',
+      'Разработка чат-ботов и голосовых ассистентов':'Bots/IVR, integrations and analytics.',
+      'Генерация контента на базе нейросетей':'Content pipeline with QA.',
+      'Настройка CI/CD и серверной инфраструктуры':'Repos, pipelines and monitoring.',
+      'Развёртывание облачных решений (AWS, GCP, Azure)':'Architecture, security and cost.',
+      'Техническая поддержка сайтов и систем':'SLA support, bugfix and improvements.',
+      'Оформление ВНЖ и гражданства через инвестиции':'Program selection and application.',
+      'Переезд и сопровождение в другой стране':'Relocation, housing, banking and comms.',
+      'Оформление виз и международных разрешений':'Preparation, booking and paperwork.',
+      'Открытие личных счетов за рубежом':'Bank/fintech, KYC and guidance.',
+      'Создание личных фондов и трастов':'Asset protection and succession.',
+      'Консультации по налоговому резидентству':'Status determination and impact.',
+      'Регистрация яхт и воздушных судов':'Registry, flags and insurance.',
+      'Юридическая защита частных активов':'Structures and contractual safety.',
+      'Создание персонального сайта и имиджа':'Positioning, site and content.',
+      'Ведение соцсетей и медийное продвижение':'Content plan and audience growth.',
+      'PR-сопровождение и работа со СМИ':'Publications and media strategy.'
+    }};
+
+    function $(s,root=document){return root.querySelector(s)}
+    function $all(s,root=document){return [...root.querySelectorAll(s)]}
+
+    const catWrap=$('#catWrap');const subcatWrap=$('#subcatWrap');const serviceList=$('#serviceList');let activeCat=null,activeSub=null;let currentLang='ru';
+
+    function show(key){return currentLang==='en'?(MAP_EN[key]||key):key}
+
+    function buildMega(){const cats=$('#mega-cats');const subs=$('#mega-subs');const svcs=$('#mega-svcs');cats.innerHTML='';subs.innerHTML='';svcs.innerHTML='';Object.keys(SERVICES).forEach(cat=>{const a=document.createElement('a');a.href='#services';a.textContent=show(cat);a.dataset.cat=cat;a.addEventListener('mouseenter',()=>fillSubs(cat));a.addEventListener('click',e=>{e.preventDefault();selectCategory(cat)});cats.appendChild(a)});
+      function fillSubs(cat){subs.innerHTML='';svcs.innerHTML='';Object.keys(SERVICES[cat]).forEach(sub=>{const a=document.createElement('a');a.href='#services';a.textContent=show(sub);a.addEventListener('mouseenter',()=>fillSvcs(cat,sub));a.addEventListener('click',e=>{e.preventDefault();selectCategory(cat);setTimeout(()=>selectSubcategory(sub),10)});subs.appendChild(a)})}
+      function fillSvcs(cat,sub){svcs.innerHTML='';SERVICES[cat][sub].forEach(s=>{const a=document.createElement('a');a.href='#';a.textContent=show(s);a.addEventListener('click',e=>{e.preventDefault();openServiceModal(s,cat,sub)});svcs.appendChild(a)})}
+    }
+
+    function buildCategories(){catWrap.innerHTML='';Object.keys(SERVICES).forEach(cat=>{const card=document.createElement('div');card.className='cat-card reveal';card.dataset.cat=cat;const img=CATEGORY_IMAGES[cat]||'';if(img){card.style.backgroundImage=`linear-gradient(transparent,transparent),url('${img}')`;}const title=document.createElement('h3');title.textContent=show(cat);card.appendChild(title);card.onclick=()=>selectCategory(cat);catWrap.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'))});subcatWrap.className='list';subcatWrap.innerHTML=''}
+
+    function selectCategory(cat){activeCat=cat;activeSub=null;[...catWrap.children].forEach(c=>c.classList.toggle('active',c.dataset&&c.dataset.cat===cat));subcatWrap.innerHTML='';subcatWrap.className='list';serviceList.innerHTML='';Object.keys(SERVICES[cat]).forEach(sub=>{const el=document.createElement('div');el.className='item reveal in';el.textContent=show(sub);el.onclick=()=>selectSubcategory(sub);subcatWrap.appendChild(el)})}
+
+    function selectSubcategory(sub){activeSub=sub;[...subcatWrap.children].forEach(c=>c.classList.toggle('active',c.textContent===show(sub)));serviceList.innerHTML='';SERVICES[activeCat][sub].forEach(svc=>{const div=document.createElement('div');div.className='item reveal in';div.textContent=show(svc);div.onclick=()=>openServiceModal(svc,activeCat,sub);serviceList.appendChild(div)});const y=serviceList.getBoundingClientRect().top+window.scrollY-50;window.scrollTo({top:y,behavior:'smooth'})}
+
+    const modal=$('#modal');const modalTitle=$('#modalTitle');const modalText=$('#modalText');const closeModalBtn=$('#closeModal');let lastFocus=null;
+    function getFocusable(){return modal.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])')}
+    function closeModal(){modal.classList.remove('open');document.body.style.overflow='';if(lastFocus) lastFocus.focus()}
+    function openServiceModal(service,cat,sub){modalTitle.textContent=show(service);const en=currentLang==='en';const d=(SERVICE_DESC[currentLang]&&SERVICE_DESC[currentLang][service])||(en?'Short description will be provided.':'Краткое описание будет добавлено.');const tail=en?'\n\nFree consultation. Choose a messenger to start.':'\n\nКонсультация бесплатная. Выберите мессенджер, чтобы начать.';modalText.textContent=d+tail;lastFocus=document.activeElement;modal.classList.add('open');document.body.style.overflow='hidden';const f=getFocusable();f.length&&f[0].focus()}
+    closeModalBtn.onclick=closeModal;modal.addEventListener('click',e=>{if(e.target===modal) closeModal()});
+    document.addEventListener('keydown',e=>{if(!modal.classList.contains('open')) return; if(e.key==='Escape'){e.preventDefault();closeModal()} if(e.key==='Tab'){const f=[...getFocusable()];if(!f.length) return;const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+
+    function applyI18n(){document.querySelectorAll('[data-i18n]').forEach(el=>{const path=el.getAttribute('data-i18n').split('.');let cur=i18n[currentLang];for(const p of path){cur=cur&&cur[p]}if(typeof cur==='string'){el.innerText=cur}});document.documentElement.setAttribute('lang',currentLang==='en'?'en':'ru');buildCategories();buildMega()}
+
+    document.querySelectorAll('.lang-switch button').forEach(btn=>{btn.onclick=()=>{document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentLang=btn.dataset.lang;applyI18n()}})
+
+    document.querySelectorAll('[data-scroll]').forEach(a=>{a.addEventListener('click',e=>{const href=a.getAttribute('href');if(href&&href.startsWith('#')){e.preventDefault();const target=document.querySelector(href);target?target.scrollIntoView({behavior:'smooth'}):window.scrollTo({top:0,behavior:'smooth'})}})})
+
+    const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    const nums=document.querySelectorAll('.num');const io2=new IntersectionObserver(entries=>{entries.forEach(({isIntersecting,target})=>{if(!isIntersecting)return;io2.unobserve(target);const end=+target.dataset.count;let cur=0;function step(){cur+=Math.max(1,Math.round(end/80));if(cur>=end){cur=end}target.textContent=cur.toLocaleString('ru-RU');if(cur<end){requestAnimationFrame(step)}}requestAnimationFrame(step)})},{threshold:.4});nums.forEach(n=>io2.observe(n));
+
+    const slidesEl=document.querySelector('.slides');const slideCount=slidesEl.children.length;let idx=0;const counterEl=document.getElementById('counter');function updateSlider(){slidesEl.style.transform='translateX(-'+(idx*100)+'%)';if(counterEl)counterEl.textContent=(idx+1)+'/'+slideCount}document.getElementById('prev').onclick=()=>{idx=(idx-1+slideCount)%slideCount;updateSlider()};document.getElementById('next').onclick=()=>{idx=(idx+1)%slideCount;updateSlider()};updateSlider();
+
+    function openMessenger(){const tg='https://t.me/yourusername';const wa='https://wa.me/0000000000';if(confirm(currentLang==='en'?'Open Telegram? (Cancel for WhatsApp)':'Открыть Telegram? (Отмена — WhatsApp)')){window.open(tg,'_blank')}else{window.open(wa,'_blank')}}window.openMessenger=openMessenger
+
+    const prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;const cursor=document.querySelector('.cursor');const dot=cursor.querySelector('.dot');const ring=cursor.querySelector('.ring');let tx=innerWidth/2,ty=innerHeight/2,cx=tx,cy=ty,rx=tx,ry=ty;let ORBS=null;function tick(){if(prefersReduced)return;cx+=(tx-cx)*0.22;cy+=(ty-cy)*0.22;rx+=(tx-rx)*0.12;ry+=(ty-ry)*0.12;dot.style.transform=`translate3d(${cx-8}px,${cy-8}px,0)`;ring.style.transform=`translate3d(${rx-18}px,${ry-18}px,0)`;document.documentElement.style.setProperty('--mx',((tx-innerWidth/2)*0.04).toFixed(2)+'px');document.documentElement.style.setProperty('--my',((ty-innerHeight/2)*0.04).toFixed(2)+'px');if(ORBS){const nx=(tx-innerWidth/2)/innerWidth,ny=(ty-innerHeight/2)/innerHeight;for(const o of ORBS){const targetX=o.baseX+nx*(60+o.speed*140);const targetY=o.baseY+ny*(60+o.speed*140);o.x+=(targetX-o.x)*0.08;o.y+=(targetY-o.y)*0.08;o.el.style.transform=`translate3d(${o.x}px,${o.y}px,0)`}}drawTrail();requestAnimationFrame(tick)}if(!prefersReduced){requestAnimationFrame(tick)}
+    window.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;tx=e.clientX;ty=e.clientY},{passive:true});window.addEventListener('pointerdown',()=>cursor.classList.add('active'));window.addEventListener('pointerup',()=>cursor.classList.remove('active'));document.addEventListener('mouseover',e=>{if(e.target.closest('a,button,.chip,.item,.arr,.btn'))cursor.classList.add('hover')});document.addEventListener('mouseout',e=>{if(e.target.closest('a,button,.chip,.item,.arr,.btn'))cursor.classList.remove('hover')});
+
+    function buildFX(){if(prefersReduced)return;const fx=document.getElementById('fx');if(!fx)return;fx.innerHTML='';ORBS=[];const w=innerWidth,h=innerHeight;const COUNT=Math.max(10,Math.min(18,Math.round((w*h)/160000)));for(let i=0;i<COUNT;i++){const el=document.createElement('div');el.className='orb'+(i%4===0?' white':'');const size=120+Math.random()*220;el.style.width=size+'px';el.style.height=size+'px';const baseX=(Math.random()*1.3-0.15)*w;const baseY=(Math.random()*1.3-0.15)*h;el.style.left=baseX+'px';el.style.top=baseY+'px';fx.appendChild(el);ORBS.push({el,baseX,baseY,x:baseX,y:baseY,speed:Math.random()*0.8+0.2})}}
+
+    const trail=document.getElementById('trail');let ctx=trail?trail.getContext('2d'):null;let dpr=Math.max(1,window.devicePixelRatio||1);function resizeTrail(){if(!ctx)return;dpr=Math.max(1,window.devicePixelRatio||1);trail.width=innerWidth*dpr;trail.height=innerHeight*dpr;trail.style.width=innerWidth+'px';trail.style.height=innerHeight+'px';ctx.setTransform(dpr,0,0,dpr,0,0)}window.addEventListener('resize',resizeTrail);
+    const PTS=Array.from({length:16},()=>({x:tx,y:ty}));function hexToRgb(hex){const m=hex.trim().replace('#','');const s=m.length===3?m.split('').map(c=>c+c).join(''):m;const n=parseInt(s,16);return{r:(n>>16)&255,g:(n>>8)&255,b:n&255}}const ACCENT_RGB=hexToRgb(ACCENT||'#00D9A0');
+    function drawTrail(){if(!ctx)return;ctx.clearRect(0,0,trail.width,trail.height);PTS[0].x+=(tx-PTS[0].x)*0.25;PTS[0].y+=(ty-PTS[0].y)*0.25;for(let i=1;i<PTS.length;i++){PTS[i].x+=(PTS[i-1].x-PTS[i].x)*0.25;PTS[i].y+=(PTS[i-1].y-PTS[i].y)*0.25}ctx.lineCap='round';for(let i=0;i<PTS.length-1;i++){const p=PTS[i],n=PTS[i+1];const t=1-i/(PTS.length-1);ctx.strokeStyle=`rgba(${ACCENT_RGB.r},${ACCENT_RGB.g},${ACCENT_RGB.b},${0.035*t+0.008})`;ctx.lineWidth=2.2*t+0.5;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke()}}
+
+    window.addEventListener('load',()=>{const pre=document.getElementById('preloader');if(pre){setTimeout(()=>pre.remove(),300)}applyI18n();buildFX();resizeTrail()});
+
+    
+  </script>
+</body>
+</html>
