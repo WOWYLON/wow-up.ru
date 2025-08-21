@@ -1,12 +1,12 @@
 
 server {
     listen 80;
-    server_name example.com www.example.com;
-    root /var/www/example.com;  # <-- путь к папке с index.html
+    server_name wow-up.ru www.wow-up.ru;
+    root /var/www/wow-up.ru;  # <-- путь к папке с index.html
 
     index index.html;
-    access_log /var/log/nginx/example_access.log;
-    error_log  /var/log/nginx/example_error.log;
+    access_log /var/log/nginx/wow-up_access.log;
+    error_log  /var/log/nginx/wow-up_error.log;
 
     location / {
         try_files $uri $uri/ =404;
